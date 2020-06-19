@@ -1,0 +1,161 @@
+
+
+body {
+  background-image: url(796854.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+
+}
+a {
+  color: white;
+}
+
+a:hover {
+  color: chartreuse;
+  text-decoration: none;
+}
+.navbar-brand{
+  font-size: 22px;
+  padding: 10px 0;
+}
+.navbar-transparent {
+    transition: all .5s ease-in-out;
+    background-color: transparent;
+    padding-top: 1.563rem;
+    padding-bottom: 1.563rem;
+}
+.nav-item{
+  font-size: 18px;
+  padding-left: 10px;
+  padding-right: 10px
+
+}
+.navbar-transparent button:focus{
+  outline-width: 0;
+}
+.navbar-reduce button:focus{
+  outline-width: 0;
+}
+.navbar-transparent .navbar-toggler {
+    border-color: white;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.navbar-transparent .navbar-toggler:hover {
+    border-color: chartreuse;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='chartreuse' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.navbar-reduce .navbar-toggler {
+    border-color: black;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(0,0,0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.navbar-reduce .navbar-toggler:hover {
+    border-color: chartreuse;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='chartreuse' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+#contact {
+  position: relative;
+  padding: 8rem 0;
+}
+
+.display-content{
+  width: 100%;
+  height: 100%;
+  display: table;
+  text-align: center;
+  position: absolute;
+}
+
+.main-content{
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#home{
+  height: 100vh;
+  position: relative;
+  color: #fff;
+}
+
+
+.backgroundcontent {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0px;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  opacity: .9;
+}
+
+.title {
+  color: #fff;
+  font-size: 3rem;
+}
+
+.subtitle {
+  font-size: 2.5rem;
+  color: chartreuse;
+}
+.bg-display {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  opacity: .7;
+}
+.box {
+  margin-bottom: 3rem;
+}
+
+.box-title {
+  font-size: 2rem;
+  position: relative;
+}
+
+.bar{
+  content: " ";
+  position: absolute;
+  height: 3px;
+  background-color: chartreuse;
+  width: 100px;
+}
+.contact-box {
+  padding: 3rem;
+  position: relative;
+  background-color: #fff;
+  margin-bottom: 3rem;
+  z-index: 2;
+  border-radius: 10px;
+}
+.navbar-reduce {
+  transition: all .5s ease-in-out;
+  background-color: #fff;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.navbar-reduce a {
+  color: black;
+}
+
+.navbar-reduce a:hover {
+  color: chartreuse;
+  text-decoration: none;
+}
+.material-icons {
+  vertical-align: middle;
+  font-size: 16px;
+}
+.material-icons:hover{
+  font-size: 18px;
+  color: chartreuse;
+}

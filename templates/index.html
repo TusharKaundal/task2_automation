@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+
+    <link href="{{ url_for('static',filename='style.css')}}" type="text/css" rel="stylesheet">
+
+  </head>
+  <body>
+    <nav class="navbar navbar-transparent navbar-expand-md  fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">MY PAGE</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+           <ul class="navbar-nav">
+             <li class="nav-item">
+               <a class="nav-link nav-link-grow-up" href="#home">HOME</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link nav-link-grow-up" href="#contact">CONTACT</a>
+             </li>
+           </ul>
+        </div>
+      </div>
+    </nav>
+    <div id="home" >
+      <div class="backgroundcontent"></div>
+      <div class="display-content">
+        <div class="main-content">
+          <div class="container">
+            <h1 class="title">I am {{content}}</h1>
+            <p class="subtitle"><span class="animate"></span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section id="contact">
+      <div class="bg-display"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+              <div class="contact-box">
+                <div class="row">
+                  <div class="col-md-8">
+                    <div class="box">
+                      <h5 class="box-title">
+                        Contact Us
+                      </h5>
+                      <div class="bar">
+                      </div>
+                    </div>
+                    <div>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolorum dolorem soluta quidem
+                        expedita aperiam aliquid at.
+                        Totam magni ipsum suscipit amet? Autem nemo esse laboriosam ratione nobis
+                        mollitia inventore?
+                      </p>
+                      <ul style="list-style-type:none;">
+                        <li><span class="material-icons">location_on</span> 329 WASHINGTON ST BOSTON, MA 02108</li>
+                        <li><span class="material-icons">local_phone</span> (617) 557-0089</li>
+                        <li><span class="material-icons">mail</span> contact@example.com</li>
+                      </ul>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    <script src="{{ url_for('static',filename='typed.js')}}"></script>
+    <script>
+    var typed = new Typed('.animate ', {
+     strings:[
+       "Web Developer",
+       "MLOps",
+       "Dancer",
+      ],
+      typeSpeed:70,
+      backSpeed:60,
+      loop:true
+
+    });
+	</script>
+	<script>
+    $(window).scroll(function(){
+    if ($(this).scrollTop() > 50) {
+       $('.navbar').addClass('navbar-reduce');
+        $('.navbar').removeClass('navbar-transparent');
+    } else {
+       $('.navbar').addClass('navbar-transparent');
+       $('.navbar').removeClass('navbar-reduce');
+    }
+   });
+    </script>
+  </body>
+</html>
